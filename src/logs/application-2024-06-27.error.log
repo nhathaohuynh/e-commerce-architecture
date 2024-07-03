@@ -1,0 +1,6 @@
+2024-06-27 21:23:28 - 8d5bbac2-376b-4289-a26e-1758c3438724 - error - User already registered - /api/v1/e-commerce/user/register - {}
+2024-06-27 21:33:55 - ae54ce93-8306-4960-b971-a805930b388a - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - NaNms - response: \"User already registered\""}
+2024-06-27 21:35:07 - 7f468d5c-5b9e-4c36-9baf-29a3936ad5a5 - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - NaNms - response: \"User already registered\""}
+2024-06-27 21:35:52 - beb7266e-dd9c-4048-ae0b-14b56665ccce - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - NaNms - response: \"User already registered\""}
+2024-06-27 21:36:29 - 3eaa6595-97f6-483e-9271-5432607de95f - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - NaNms - response: \"User already registered\""}
+2024-06-27 21:38:15 - 083003f1-ce3a-4550-931c-147152229896 - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - 4ms - response: \"User already registered\""}

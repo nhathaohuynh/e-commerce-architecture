@@ -1,0 +1,16 @@
+### singup
+@URL_DEV = http://localhost:8080/api/v1/e-commerce
+
+POST {{URL_DEV}}/user/register
+Content-Type: application/json
+x-api-key: 9767c8b54aa6ad990e7237df5a3b2ec713708759d98ede0dc03393e934db7aac
+
+{
+    "email": "huynhnhathao2@gmail.com",
+    "password": "123456",
+    "name": "Nhat Hao"
+}
+
+
+###
+

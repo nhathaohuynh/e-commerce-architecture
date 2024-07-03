@@ -1,0 +1,141 @@
+2024-07-02 00:00:44 - 94f2a3c6-8f28-4604-b437-b88485fa2d5e - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 14:05:44 - e56ecaa7-6fc5-4550-9477-5719c3ad75b9 - info - Input params::POST - /api/v1/e-commerce/user/register - {"username":"Nhat Hao","email":"huynhnhathao0609@gmail.com","password":"johnDoe20!@"}
+2024-07-02 14:05:44 - e56ecaa7-6fc5-4550-9477-5719c3ad75b9 - error - Template not found - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"Template not found\""}
+2024-07-02 14:07:05 - c1fea016-3681-4c1b-bab5-876d2fb358a6 - info - Input params::POST - /api/v1/e-commerce/user/register - {"username":"Nhat Hao","email":"huynhnhathao0609@gmail.com","password":"johnDoe20!@"}
+2024-07-02 14:07:08 - unKnown - info - Email sent: 250 2.0.0 OK  1719904028 d9443c01a7336-1fac10e43f6sm76609315ad.97 - gsmtp - undefined - 
+2024-07-02 14:13:22 - 290383ef-9a1d-4257-a03f-eb2545fe9644 - info - Input params::POST - /api/v1/e-commerce/user/register - {"username":"Nhat Hao","email":"huynhnhathao0609@gmail.com","password":"johnDoe20!@"}
+2024-07-02 14:13:25 - unKnown - info - Email sent: 250 2.0.0 OK  1719904405 41be03b00d2f7-72c6d3efeddsm6064472a12.88 - gsmtp - undefined - 
+2024-07-02 14:13:47 - a6d3461f-8b85-42af-9c8c-9a356dbcf1a3 - info - Input params::GET - //api/v1/e-commerce/user/verify-email - {"token":"590363166"}
+2024-07-02 14:13:47 - a6d3461f-8b85-42af-9c8c-9a356dbcf1a3 - error - Not found - //api/v1/e-commerce/user/verify-email - {"message":"404 - NaNms - response: \"Not found\""}
+2024-07-02 17:55:33 - a9603b4d-afef-4de8-b919-6a3cc4eecd33 - info - Input params::GET - //api/v1/e-commerce/user/verify-email - {"token":"590363166"}
+2024-07-02 17:55:33 - a9603b4d-afef-4de8-b919-6a3cc4eecd33 - error - Not found - //api/v1/e-commerce/user/verify-email - {"message":"404 - NaNms - response: \"Not found\""}
+2024-07-02 20:49:33 - f22af4e1-c854-43a9-b61b-96a22558f444 - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 20:51:03 - 3f2f5384-cff3-4905-b438-8e83eaf8708e - info - Input params::POST - /api/v1/e-commerce/user/register - {"username":"Nhat Hao","email":"huynhnhathao0609@gmail.com","password":"johnDoe20!@"}
+2024-07-02 20:51:07 - unKnown - info - email sent: 250 2.0.0 OK  1719928267 d2e1a72fcca58-70802667c59sm8506810b3a.86 - gsmtp - undefined - 
+2024-07-02 20:53:30 - fc23522c-8d93-4b40-b1d3-8871033a9898 - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 20:53:34 - 90c13e7f-189d-4444-a78e-e105f571cc7f - info - Input params::POST - /api/v1/e-commerce/user/register - {"username":"Nhat Hao","email":"huynhnhathao0609@gmail.com","password":"johnDoe20!@"}
+2024-07-02 20:53:37 - unKnown - info - email sent: 250 2.0.0 OK  1719928417 41be03b00d2f7-72c69b53e49sm6640392a12.13 - gsmtp - undefined - 
+2024-07-02 20:54:43 - 98083bd8-19ec-4d7c-b589-8022f2d608b7 - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 21:26:48 - f30b2605-d7f8-4dee-ae85-8e64bc1eab57 - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 21:30:01 - 4cd8e7a8-ce1c-41d0-9b94-1b1f0bd95e84 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 21:30:01 - 4cd8e7a8-ce1c-41d0-9b94-1b1f0bd95e84 - error - undefined required - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"undefined required\""}
+2024-07-02 21:34:23 - 981dda24-5290-4a09-a10f-e2b1aab288c1 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 21:34:23 - 981dda24-5290-4a09-a10f-e2b1aab288c1 - error - undefined required - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"undefined required\""}
+2024-07-02 21:36:14 - 04f7f1f1-0668-452a-b287-d2fd42d25141 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 21:36:18 - unKnown - info - email sent: 250 2.0.0 OK  1719930978 d2e1a72fcca58-70803ecfc61sm8591344b3a.132 - gsmtp - undefined - 
+2024-07-02 21:37:52 - 679705aa-ea8c-4732-ab87-6cf900d5018a - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 21:37:57 - c8ddb230-83dd-4b2e-9893-819ea99e803b - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 21:38:01 - unKnown - info - email sent: 250 2.0.0 OK  1719931081 d2e1a72fcca58-70801e53f83sm8610056b3a.26 - gsmtp - undefined - 
+2024-07-02 21:38:54 - 08f72683-ec6d-4445-a8ee-34b6f6b19f6d - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3883799428"}
+2024-07-02 21:38:54 - 08f72683-ec6d-4445-a8ee-34b6f6b19f6d - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 21:44:29 - 250ac1b1-5d97-408e-85e4-5701be1ded38 - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TOKEN"}
+2024-07-02 21:44:32 - 64409b4c-3648-44ef-9ef6-0cf800f5bd24 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 21:44:35 - unKnown - info - email sent: 250 2.0.0 OK  1719931475 d9443c01a7336-1fac10d2282sm85073415ad.44 - gsmtp - undefined - 
+2024-07-02 22:09:22 - 36c7e1b4-9204-466d-a64f-4215ca2fb115 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:09:25 - unKnown - info - email sent: 250 2.0.0 OK  1719932965 d9443c01a7336-1fac10d1c83sm87676675ad.17 - gsmtp - undefined - 
+2024-07-02 22:09:34 - 9c7093fb-6970-40aa-9f2a-1a3fccb97e46 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3406649112"}
+2024-07-02 22:09:34 - 9c7093fb-6970-40aa-9f2a-1a3fccb97e46 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 4ms - response: \"Forbidden\""}
+2024-07-02 22:09:53 - 0aecf70e-caa2-45bc-89c3-f3b479157e69 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3406649112"}
+2024-07-02 22:09:53 - 0aecf70e-caa2-45bc-89c3-f3b479157e69 - error - Email already exists - /api/v1/e-commerce/user/verify-email - {"message":"400 - 8ms - response: \"Email already exists\""}
+2024-07-02 22:11:05 - df9e00fc-71c0-4bf9-8d7e-2d298f243424 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3406649112"}
+2024-07-02 22:11:05 - df9e00fc-71c0-4bf9-8d7e-2d298f243424 - error - Token not found - /api/v1/e-commerce/user/verify-email - {"message":"400 - 0ms - response: \"Token not found\""}
+2024-07-02 22:12:02 - 6d764022-c7f8-4709-b8de-949c712245c2 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:12:04 - unKnown - info - email sent: 250 2.0.0 OK  1719933124 d9443c01a7336-1fac10c8f81sm85569525ad.28 - gsmtp - undefined - 
+2024-07-02 22:14:28 - 09412dbd-9231-424e-9ce3-382871030bdc - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"852345746"}
+2024-07-02 22:14:28 - 09412dbd-9231-424e-9ce3-382871030bdc - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:14:36 - 16146518-1ea6-451c-9c06-a699bab13c71 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"852345746"}
+2024-07-02 22:14:36 - 16146518-1ea6-451c-9c06-a699bab13c71 - error - Token not found - /api/v1/e-commerce/user/verify-email - {"message":"400 - 1ms - response: \"Token not found\""}
+2024-07-02 22:14:43 - afeae3f0-0b36-4363-b17c-3c3f05579955 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:14:45 - unKnown - info - email sent: 250 2.0.0 OK  1719933285 d9443c01a7336-1fac1596728sm85470325ad.256 - gsmtp - undefined - 
+2024-07-02 22:14:51 - fd1e9085-bca3-4138-add4-e218e6f5f181 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"957576750"}
+2024-07-02 22:14:51 - fd1e9085-bca3-4138-add4-e218e6f5f181 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-02 22:14:59 - ce1faea7-062e-4cd7-a66f-e4adfbf94cd6 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"957576750"}
+2024-07-02 22:22:31 - 536e89ff-933b-4278-94a4-8dddec30fc98 - info - Input params::POST - /api/v1/e-commerce/template/create - {"name":"HTML_EMAIL_SEND_TEMPORARY_PASSWORD"}
+2024-07-02 22:22:56 - 03b1eb45-c33d-4ce3-ad9e-571248f1743f - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:22:59 - unKnown - info - email sent: 250 2.0.0 OK  1719933779 d9443c01a7336-1fac1568dd9sm85498635ad.182 - gsmtp - undefined - 
+2024-07-02 22:23:06 - a89b9b35-5327-40d3-823d-ec57918a2351 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"12358477"}
+2024-07-02 22:23:06 - a89b9b35-5327-40d3-823d-ec57918a2351 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:23:35 - 9f8a3d5e-f459-48a0-8217-67fa4a4745f4 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"12358477"}
+2024-07-02 22:23:35 - 9f8a3d5e-f459-48a0-8217-67fa4a4745f4 - error - email is not defined - /api/v1/e-commerce/user/verify-email - {"message":"400 - 0ms - response: \"email is not defined\""}
+2024-07-02 22:25:52 - 77796245-2b35-42ba-aeb3-d43bee20ab16 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:25:52 - 77796245-2b35-42ba-aeb3-d43bee20ab16 - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"User already registered\""}
+2024-07-02 22:26:22 - d806bfd1-e69c-44d3-a818-0a684706df84 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:26:25 - unKnown - info - email sent: 250 2.0.0 OK  1719933985 98e67ed59e1d1-2c91d3bf20dsm8937555a91.39 - gsmtp - undefined - 
+2024-07-02 22:26:28 - fe569d13-11ee-4514-a110-1ba2bb4a1755 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3821790846"}
+2024-07-02 22:26:28 - fe569d13-11ee-4514-a110-1ba2bb4a1755 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-02 22:27:00 - fc2afacd-2d08-4884-96a9-589150a728d3 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3821790846"}
+2024-07-02 22:27:00 - fc2afacd-2d08-4884-96a9-589150a728d3 - error - Cannot access 'publicKey' before initialization - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"Cannot access 'publicKey' before initialization\""}
+2024-07-02 22:27:03 - unKnown - info - email sent: 250 2.0.0 OK  1719934023 d9443c01a7336-1fac15b8920sm85798295ad.304 - gsmtp - undefined - 
+2024-07-02 22:29:46 - 2c55af06-656c-42b6-a9c3-b00b92418a22 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:29:50 - unKnown - info - email sent: 250 2.0.0 OK  1719934190 98e67ed59e1d1-2c91ce4526esm8956849a91.20 - gsmtp - undefined - 
+2024-07-02 22:30:09 - 2a0ae843-67cc-45c3-8ae0-cf06df4beebf - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"621894880"}
+2024-07-02 22:30:09 - 2a0ae843-67cc-45c3-8ae0-cf06df4beebf - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:30:17 - 4a47d1ba-0826-4cfd-a3fe-c200a277a4e7 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"621894880"}
+2024-07-02 22:30:22 - unKnown - error - erorr send email:: No recipients defined - undefined - 
+2024-07-02 22:32:53 - a775936c-48cf-4a2a-ab6a-9a810d7aa1fc - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:32:59 - d4ba4ab5-85c3-4c6a-bee8-4bca171c34f9 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"1256261956"}
+2024-07-02 22:32:59 - d4ba4ab5-85c3-4c6a-bee8-4bca171c34f9 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:33:05 - 234366b1-486f-476e-917f-ae8b72575fe1 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"1256261956"}
+2024-07-02 22:33:12 - unKnown - error - erorr send email:: No recipients defined - undefined - 
+2024-07-02 22:35:21 - 3efa309e-aab8-4060-8d3a-3b64e862da00 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:36:07 - f56810fe-646f-49f6-8e71-9e0163282c5d - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"1081988140"}
+2024-07-02 22:36:07 - f56810fe-646f-49f6-8e71-9e0163282c5d - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:36:17 - 81ee3535-bd87-4fa9-9cd8-bc82fa91c593 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"1081988140"}
+2024-07-02 22:37:11 - 77b88c06-3d95-4749-8cb3-fbbf7ade90af - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:37:40 - d48510eb-2420-48b2-86f8-e8fc0330430d - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:38:08 - 2e7b6534-c279-42b4-a2db-e5a28bbbd0f7 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:38:48 - 8b6e6755-847a-4d62-8b53-bee5d93644b0 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:38:51 - unKnown - info - Email sent: <e86c665c-c739-1db9-6907-ab90b290c0e6@gmail.com> - undefined - 
+2024-07-02 22:43:52 - 5ab069fe-a966-4b79-8511-f4270d9de800 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:44:59 - dbf7548e-5f85-4841-9fe5-d12150c9d7ac - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:50:59 - b9492214-1f9f-4af2-80be-e9883f4eabcd - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:51:53 - 7461a377-4e6d-4f18-83e2-972a0e105b9f - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:51:56 - 7461a377-4e6d-4f18-83e2-972a0e105b9f - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:52:34 - 14053022-b3ca-4cda-b476-237d3b811a32 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:52:37 - 14053022-b3ca-4cda-b476-237d3b811a32 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"a is not defined\""}
+2024-07-02 22:53:11 - 9efbca2e-256e-41a5-ad0e-a27498af2504 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:53:15 - 9efbca2e-256e-41a5-ad0e-a27498af2504 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:56:37 - 90bcba2a-03c9-4adb-a3d2-1fd22ce0dd8d - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:56:40 - 90bcba2a-03c9-4adb-a3d2-1fd22ce0dd8d - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:56:44 - c6425ce9-0fe8-4ae5-9e6e-b2420753cc17 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:56:47 - c6425ce9-0fe8-4ae5-9e6e-b2420753cc17 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"a is not defined\""}
+2024-07-02 22:57:04 - 35782a29-2960-42a9-94e5-e4fc15cfc4e5 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:57:06 - 35782a29-2960-42a9-94e5-e4fc15cfc4e5 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:58:43 - b4dffc9e-6a34-4754-9015-37ab881b1da3 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 22:58:46 - b4dffc9e-6a34-4754-9015-37ab881b1da3 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:00:33 - 54d68411-373d-4a2e-88a3-14e81e1d3665 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:00:35 - 54d68411-373d-4a2e-88a3-14e81e1d3665 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:03:37 - 81b9f78b-63f9-42e4-86a4-d0f3cd15236a - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:03:39 - 81b9f78b-63f9-42e4-86a4-d0f3cd15236a - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 2ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:05:59 - fe0dedcf-766c-4b69-9fff-aa6603d61306 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:06:02 - fe0dedcf-766c-4b69-9fff-aa6603d61306 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:06:22 - f9aa21d9-81ec-446e-85b1-7d294a66a82f - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:06:38 - f9aa21d9-81ec-446e-85b1-7d294a66a82f - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:06:49 - fa7f532d-36b7-4ca4-8902-361d6eb6245f - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:06:51 - fa7f532d-36b7-4ca4-8902-361d6eb6245f - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:08:07 - f5bb4e4c-6832-4310-84e7-8aaf02a28964 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:08:09 - f5bb4e4c-6832-4310-84e7-8aaf02a28964 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:11:30 - 57cc357a-4625-4b0a-a0fc-1bec6e5e2e0f - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:11:30 - 57cc357a-4625-4b0a-a0fc-1bec6e5e2e0f - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"a is not defined\""}
+2024-07-02 23:14:23 - b549dbfe-140f-44dd-a269-d7189050942a - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:14:23 - b549dbfe-140f-44dd-a269-d7189050942a - error - next is not defined - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"next is not defined\""}
+2024-07-02 23:15:08 - 5d1569cc-9d65-40af-a773-79f7f10698bd - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:15:10 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-02 23:15:22 - 618e8f8f-77ab-43ed-a4e9-02f2efb03ec1 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"952850299"}
+2024-07-02 23:15:22 - 618e8f8f-77ab-43ed-a4e9-02f2efb03ec1 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 23:15:32 - 4aae3d29-c7da-4b74-88b2-c88475a4f622 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"952850299"}
+2024-07-02 23:15:37 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-02 23:15:40 - 4aae3d29-c7da-4b74-88b2-c88475a4f622 - error - No recipients defined - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"No recipients defined\""}
+2024-07-02 23:24:15 - c9f28875-9361-4c5f-9aaf-5c34cfad5b3e - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:24:18 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-02 23:24:22 - aeb62147-f62f-4eb9-83a7-cda763586c14 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"2132155710"}
+2024-07-02 23:24:22 - aeb62147-f62f-4eb9-83a7-cda763586c14 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 2ms - response: \"Forbidden\""}
+2024-07-02 23:24:35 - 12ec6722-3c5b-4615-9e01-fa7921610bbc - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"2132155710"}
+2024-07-02 23:24:38 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-02 23:24:43 - 12ec6722-3c5b-4615-9e01-fa7921610bbc - error - No recipients defined - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"No recipients defined\""}
+2024-07-02 23:26:55 - 5ba6a3d2-1ca4-4612-91c2-a73dd24bcfb6 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-02 23:26:58 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-02 23:27:04 - a89cbabf-32bc-4c57-8955-e0f22debb850 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"218828221"}
+2024-07-02 23:27:04 - a89cbabf-32bc-4c57-8955-e0f22debb850 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 2ms - response: \"Forbidden\""}
+2024-07-02 23:27:18 - d8127a74-4d38-4715-89f1-807888a48695 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"218828221"}
+2024-07-02 23:27:21 - unKnown - info - Email sent: [object Object] - undefined - 

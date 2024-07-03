@@ -1,0 +1,43 @@
+2024-07-02 14:05:44 - e56ecaa7-6fc5-4550-9477-5719c3ad75b9 - error - Template not found - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"Template not found\""}
+2024-07-02 14:13:47 - a6d3461f-8b85-42af-9c8c-9a356dbcf1a3 - error - Not found - //api/v1/e-commerce/user/verify-email - {"message":"404 - NaNms - response: \"Not found\""}
+2024-07-02 17:55:33 - a9603b4d-afef-4de8-b919-6a3cc4eecd33 - error - Not found - //api/v1/e-commerce/user/verify-email - {"message":"404 - NaNms - response: \"Not found\""}
+2024-07-02 21:30:01 - 4cd8e7a8-ce1c-41d0-9b94-1b1f0bd95e84 - error - undefined required - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"undefined required\""}
+2024-07-02 21:34:23 - 981dda24-5290-4a09-a10f-e2b1aab288c1 - error - undefined required - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"undefined required\""}
+2024-07-02 21:38:54 - 08f72683-ec6d-4445-a8ee-34b6f6b19f6d - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:09:34 - 9c7093fb-6970-40aa-9f2a-1a3fccb97e46 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 4ms - response: \"Forbidden\""}
+2024-07-02 22:09:53 - 0aecf70e-caa2-45bc-89c3-f3b479157e69 - error - Email already exists - /api/v1/e-commerce/user/verify-email - {"message":"400 - 8ms - response: \"Email already exists\""}
+2024-07-02 22:11:05 - df9e00fc-71c0-4bf9-8d7e-2d298f243424 - error - Token not found - /api/v1/e-commerce/user/verify-email - {"message":"400 - 0ms - response: \"Token not found\""}
+2024-07-02 22:14:28 - 09412dbd-9231-424e-9ce3-382871030bdc - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:14:36 - 16146518-1ea6-451c-9c06-a699bab13c71 - error - Token not found - /api/v1/e-commerce/user/verify-email - {"message":"400 - 1ms - response: \"Token not found\""}
+2024-07-02 22:14:51 - fd1e9085-bca3-4138-add4-e218e6f5f181 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-02 22:23:06 - a89b9b35-5327-40d3-823d-ec57918a2351 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:23:35 - 9f8a3d5e-f459-48a0-8217-67fa4a4745f4 - error - email is not defined - /api/v1/e-commerce/user/verify-email - {"message":"400 - 0ms - response: \"email is not defined\""}
+2024-07-02 22:25:52 - 77796245-2b35-42ba-aeb3-d43bee20ab16 - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"User already registered\""}
+2024-07-02 22:26:28 - fe569d13-11ee-4514-a110-1ba2bb4a1755 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-02 22:27:00 - fc2afacd-2d08-4884-96a9-589150a728d3 - error - Cannot access 'publicKey' before initialization - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"Cannot access 'publicKey' before initialization\""}
+2024-07-02 22:30:09 - 2a0ae843-67cc-45c3-8ae0-cf06df4beebf - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:30:22 - unKnown - error - erorr send email:: No recipients defined - undefined - 
+2024-07-02 22:32:59 - d4ba4ab5-85c3-4c6a-bee8-4bca171c34f9 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:33:12 - unKnown - error - erorr send email:: No recipients defined - undefined - 
+2024-07-02 22:36:07 - f56810fe-646f-49f6-8e71-9e0163282c5d - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 22:38:51 - unKnown - error - Email accepted: huynhnhathao0609@gmail.com - undefined - 
+2024-07-02 22:51:56 - 7461a377-4e6d-4f18-83e2-972a0e105b9f - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:52:37 - 14053022-b3ca-4cda-b476-237d3b811a32 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"a is not defined\""}
+2024-07-02 22:53:15 - 9efbca2e-256e-41a5-ad0e-a27498af2504 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:56:40 - 90bcba2a-03c9-4adb-a3d2-1fd22ce0dd8d - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:56:47 - c6425ce9-0fe8-4ae5-9e6e-b2420753cc17 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"a is not defined\""}
+2024-07-02 22:57:06 - 35782a29-2960-42a9-94e5-e4fc15cfc4e5 - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"a is not defined\""}
+2024-07-02 22:58:46 - b4dffc9e-6a34-4754-9015-37ab881b1da3 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:00:35 - 54d68411-373d-4a2e-88a3-14e81e1d3665 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:03:39 - 81b9f78b-63f9-42e4-86a4-d0f3cd15236a - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 2ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:06:02 - fe0dedcf-766c-4b69-9fff-aa6603d61306 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:06:38 - f9aa21d9-81ec-446e-85b1-7d294a66a82f - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:06:51 - fa7f532d-36b7-4ca4-8902-361d6eb6245f - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 0ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:08:09 - f5bb4e4c-6832-4310-84e7-8aaf02a28964 - error - ReferenceError: a is not defined - /api/v1/e-commerce/user/register - {"message":"400 - 1ms - response: \"ReferenceError: a is not defined\""}
+2024-07-02 23:11:30 - 57cc357a-4625-4b0a-a0fc-1bec6e5e2e0f - error - a is not defined - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"a is not defined\""}
+2024-07-02 23:14:23 - b549dbfe-140f-44dd-a269-d7189050942a - error - next is not defined - /api/v1/e-commerce/user/register - {"message":"undefined - NaNms - response: \"next is not defined\""}
+2024-07-02 23:15:22 - 618e8f8f-77ab-43ed-a4e9-02f2efb03ec1 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-02 23:15:40 - 4aae3d29-c7da-4b74-88b2-c88475a4f622 - error - No recipients defined - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"No recipients defined\""}
+2024-07-02 23:24:22 - aeb62147-f62f-4eb9-83a7-cda763586c14 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 2ms - response: \"Forbidden\""}
+2024-07-02 23:24:43 - 12ec6722-3c5b-4615-9e01-fa7921610bbc - error - No recipients defined - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"No recipients defined\""}
+2024-07-02 23:27:04 - a89cbabf-32bc-4c57-8955-e0f22debb850 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 2ms - response: \"Forbidden\""}
