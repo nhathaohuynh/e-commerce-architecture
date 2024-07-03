@@ -17,7 +17,7 @@ class SuccessReponse {
 	}
 }
 
-class Created extends SuccessReponse {
+class CreatedReponse extends SuccessReponse {
 	constructor({ message, metaData }) {
 		super({
 			message,
@@ -28,7 +28,7 @@ class Created extends SuccessReponse {
 	}
 }
 
-class OK extends SuccessReponse {
+class OKReponse extends SuccessReponse {
 	constructor({ message, metaData }) {
 		super({
 			message,
@@ -39,7 +39,7 @@ class OK extends SuccessReponse {
 	}
 }
 
-class NoContent extends SuccessReponse {
+class NoContentReponse extends SuccessReponse {
 	constructor({ message = ReasonPhrases.NO_CONTENT, metaData }) {
 		super({
 			message,
@@ -51,7 +51,7 @@ class NoContent extends SuccessReponse {
 }
 
 module.exports = {
-	OK,
-	Created,
-	NoContent,
+	CreatedReponse,
+	OKReponse,
+	NoContentReponse,
 }

@@ -57,4 +57,8 @@ module.exports = {
 
 		return password
 	},
+
+	comparePassword: async (password, hash) => {
+		return await bcrypt.compare(password, hash)
+	},
 }

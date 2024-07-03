@@ -1,20 +1,24 @@
 const {
-	Created,
-	NoContent,
+	CreatedReponse,
+	NoContentReponse,
+	OKReponse,
 } = require('../cores/custom-http-response/response.success')
 const { userService } = require('../services')
 
 class UserController {
 	async login(req, res, _) {
-		return res.status(200).json({
+		return new OKReponse({
 			message: 'Login success',
-		})
+			metaData: {
+				data: await userService.login(req.body),
+			},
+		}).send(res)
 	}
 
 	async register(req, res, next) {
 		const metaData = await userService.register(req.body)
 
-		return new NoContent({
+		return new NoContentReponse({
 			metaData,
 		}).send(res)
 	}
@@ -22,8 +26,22 @@ class UserController {
 	async verifyEmail(req, res) {
 		const metaData = await userService.verifyEmail(req.query.token)
 
-		return new Created({
+		return new CreatedReponse({
 			metaData,
+		}).send(res)
+	}
+
+	async refreshToken(req, res) {
+		const metaData = await userService.refreshToken(req.user)
+
+		return new OKReponse({
+			metaData,
+		}).send(res)
+	}
+
+	async logout(req, res) {
+		return new OKReponse({
+			metaData: await userService.logout(req.user),
 		}).send(res)
 	}
 }

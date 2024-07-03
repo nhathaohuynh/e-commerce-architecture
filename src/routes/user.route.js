@@ -3,11 +3,16 @@
 const { PERMISSIONS } = require('../constants')
 const { userController } = require('../controllers')
 const asyncHandler = require('../middleware/async-handler')
+const {
+	authentication,
+	authenticationAccessToken,
+} = require('../middleware/authentication')
 const { checkAPIKey, checkPermission } = require('../middleware/check-api-key')
 const validate = require('../middleware/validate')
 const {
 	userRegisterSchema,
 	userVerifyEmailSchema,
+	userLoginSchema,
 } = require('../validators/user.validator')
 
 const route = require('express').Router()
@@ -15,7 +20,11 @@ const route = require('express').Router()
 route.use(checkAPIKey)
 route.use(checkPermission(PERMISSIONS[0]))
 
-route.post('/login', asyncHandler(userController.login))
+route.post(
+	'/login',
+	validate(userLoginSchema),
+	asyncHandler(userController.login),
+)
 
 route.post(
 	'/register',
@@ -28,5 +37,15 @@ route.get(
 	validate(userVerifyEmailSchema),
 	asyncHandler(userController.verifyEmail),
 )
+
+route.get(
+	'/refresh-token',
+	authenticationAccessToken,
+	asyncHandler(userController.refreshToken),
+)
+// authenticate user
+route.use(authentication)
+
+route.delete('/logout', asyncHandler(userController.logout))
 
 module.exports = route

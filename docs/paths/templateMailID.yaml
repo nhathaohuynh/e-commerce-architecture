@@ -1,0 +1,22 @@
+delete:
+  tags:
+    - Template Controller
+  summary: delete a template
+  security:
+    - x-api-key: []
+    - x-client-id: []
+    - bearerAuth: []
+  parameters:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+      description: id
+  responses:
+    '200':
+      description: OK
+    '404':
+      description: Not Found
+    '500':
+      description: Server Error

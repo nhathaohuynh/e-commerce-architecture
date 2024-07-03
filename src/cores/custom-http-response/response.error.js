@@ -33,7 +33,7 @@ class ForbiddenError extends ErrorReponse {
 	}
 }
 
-class AuthenticationError extends ErrorReponse {
+class UnauthorizedError extends ErrorReponse {
 	constructor(
 		message = ReasonPhrases.UNAUTHORIZED,
 		status = statusCodes.UNAUTHORIZED,
@@ -51,10 +51,20 @@ class TooManyRequest extends ErrorReponse {
 	}
 }
 
+class NotFoundError extends ErrorReponse {
+	constructor(
+		message = ReasonPhrases.NOT_FOUND,
+		status = statusCodes.NOT_FOUND,
+	) {
+		super(message, status)
+	}
+}
+
 module.exports = {
 	BadRequest,
 	ConflictError,
 	ForbiddenError,
-	AuthenticationError,
+	UnauthorizedError,
 	TooManyRequest,
+	NotFoundError,
 }

@@ -1,0 +1,60 @@
+2024-07-03 11:17:35 - acb22db1-b212-485c-b52e-4ffba93d6e16 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 11:17:39 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-03 11:18:48 - bbb116a2-ecd2-4acf-b873-f37a05822d79 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"2365034517"}
+2024-07-03 11:18:48 - bbb116a2-ecd2-4acf-b873-f37a05822d79 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-03 11:19:05 - 9920ffce-20f2-4562-8e33-6cf27da6f749 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"2365034517"}
+2024-07-03 11:19:05 - 9920ffce-20f2-4562-8e33-6cf27da6f749 - error - Token not found - /api/v1/e-commerce/user/verify-email - {"message":"400 - 1ms - response: \"Token not found\""}
+2024-07-03 11:19:12 - 6efdfb69-4a80-478b-994a-a73daf5d8cd5 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 11:19:19 - unKnown - info - Email sent: [object Object] - undefined - 
+2024-07-03 11:22:18 - c57b7284-9605-48d7-9ea9-896d88e83f5d - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 11:22:23 - 02c62541-77b8-45ef-b8ac-dcb307bf5536 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 11:22:32 - 214ce4a1-8a36-4575-a89b-e335116cf6cd - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"457788053"}
+2024-07-03 11:22:32 - 214ce4a1-8a36-4575-a89b-e335116cf6cd - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-03 11:22:41 - 73dd3111-4018-4a6e-aa0e-a48671e7216e - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"457788053"}
+2024-07-03 14:25:43 - 8cdddbb3-0276-496a-b9ed-522348f18196 - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"example@gmail.com","password":"string"}
+2024-07-03 14:25:43 - 8cdddbb3-0276-496a-b9ed-522348f18196 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-03 14:31:30 - 48af91ed-1ccd-45af-addd-f66d01c1594b - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"2vzbVJSR"}
+2024-07-03 14:31:30 - 48af91ed-1ccd-45af-addd-f66d01c1594b - error - User not found - /api/v1/e-commerce/user/login - {"message":"400 - 1ms - response: \"User not found\""}
+2024-07-03 14:33:28 - 5245746d-437c-4bb0-9d83-50a43fc2b4dd - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 14:33:35 - 3ce047ed-d4a3-4853-9a3d-dba1eab484c5 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3012970254"}
+2024-07-03 14:33:35 - 3ce047ed-d4a3-4853-9a3d-dba1eab484c5 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-03 14:33:53 - 15ebdd8f-690d-4a9f-966a-ab6c0151e948 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3012970254"}
+2024-07-03 14:33:56 - 15ebdd8f-690d-4a9f-966a-ab6c0151e948 - error - generateToken is not defined - /api/v1/e-commerce/user/verify-email - {"message":"undefined - NaNms - response: \"generateToken is not defined\""}
+2024-07-03 14:34:20 - 482629aa-8dfa-464d-a95c-6bd471b7ae35 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3012970254"}
+2024-07-03 14:34:21 - 482629aa-8dfa-464d-a95c-6bd471b7ae35 - error - Token not found - /api/v1/e-commerce/user/verify-email - {"message":"400 - 1ms - response: \"Token not found\""}
+2024-07-03 14:34:43 - 13e493f8-d728-40d2-bfe2-253cd5a4cfbd - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 14:34:43 - 13e493f8-d728-40d2-bfe2-253cd5a4cfbd - error - User already registered - /api/v1/e-commerce/user/register - {"message":"400 - 4ms - response: \"User already registered\""}
+2024-07-03 14:35:36 - cb1b0767-0d45-498d-885d-e75dad286323 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 14:35:44 - 4b265790-3f73-46da-bbac-a50028ddd5f2 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"764348453"}
+2024-07-03 14:35:44 - 4b265790-3f73-46da-bbac-a50028ddd5f2 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-03 14:35:57 - ed1f52ed-347d-432b-8d97-062c0a6de52a - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"764348453"}
+2024-07-03 14:37:45 - e1555a1b-62df-40f3-a88c-cdac8ef3b7e7 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 14:37:53 - 5c749efc-1b31-4994-90c4-ae88c6d25e9c - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3661603287"}
+2024-07-03 14:37:53 - 5c749efc-1b31-4994-90c4-ae88c6d25e9c - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-03 14:37:59 - 19bc4791-def8-43b7-9523-4ad5f84669e9 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"3661603287"}
+2024-07-03 14:49:51 - f588fc88-4ef9-438c-9baa-64a8f4429c0f - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"ZiFrToS@"}
+2024-07-03 16:45:07 - 18a7c126-aa42-41f8-95bb-02a87e55a8e6 - info - Input params::POST - /api/v1/e-commerce/APIKey - {"permissions":["2222","3333"]}
+2024-07-03 16:45:39 - bddc8621-9899-4589-b70f-512f88bcbac9 - info - Input params::POST - /api/v1/e-commerce/user/register - {"email":"huynhnhathao0609@gmail.com"}
+2024-07-03 16:47:00 - cd5597ee-47c7-498e-9064-6ceb4e4148b9 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"4015383781"}
+2024-07-03 16:47:00 - cd5597ee-47c7-498e-9064-6ceb4e4148b9 - error - Forbidden - /api/v1/e-commerce/user/verify-email - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-03 16:47:16 - f37e83e9-2720-4f36-a360-f8617523dc25 - info - Input params::GET - /api/v1/e-commerce/user/verify-email - {"token":"4015383781"}
+2024-07-03 17:00:24 - 65770f3a-fe1a-4715-bb97-c7b39ca84f24 - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:00:50 - 5c0ea517-a7ff-4d27-9dcc-a5e7de4d5f24 - info - Input params::DELETE - /api/v1/e-commerce/user/logout - {}
+2024-07-03 17:00:50 - 5c0ea517-a7ff-4d27-9dcc-a5e7de4d5f24 - error - Unauthorized - /api/v1/e-commerce/user/logout - {"message":"401 - 0ms - response: \"Unauthorized\""}
+2024-07-03 17:02:15 - de8a2820-6f49-4ccc-b577-d57ab97a89f0 - info - Input params::DELETE - /api/v1/e-commerce/user/logout - {}
+2024-07-03 17:02:15 - de8a2820-6f49-4ccc-b577-d57ab97a89f0 - error - Unauthorized - /api/v1/e-commerce/user/logout - {"message":"401 - 1ms - response: \"Unauthorized\""}
+2024-07-03 17:04:52 - 08bf9234-3600-4b12-af09-a0a941e225be - info - Input params::DELETE - /api/v1/e-commerce/user/logout - {}
+2024-07-03 17:04:52 - 08bf9234-3600-4b12-af09-a0a941e225be - error - Unauthorized - /api/v1/e-commerce/user/logout - {"message":"401 - 0ms - response: \"Unauthorized\""}
+2024-07-03 17:09:10 - c7bdd38e-c672-41ad-84ab-586d8ead36a6 - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:09:45 - cf24896c-5f96-4832-9c61-e96c028eeda4 - info - Input params::DELETE - /api/v1/e-commerce/user/logout - {}
+2024-07-03 17:09:45 - cf24896c-5f96-4832-9c61-e96c028eeda4 - error - Cannot read properties of undefined (reading 'split') - /api/v1/e-commerce/user/logout - {"message":"undefined - NaNms - response: \"Cannot read properties of undefined (reading 'split')\""}
+2024-07-03 17:17:33 - ada9a775-8028-4e15-b4a5-d226f9942283 - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:17:52 - 55d86437-0aa6-4380-8c98-b15db1fc5c3c - info - Input params::DELETE - /api/v1/e-commerce/user/logout - {}
+2024-07-03 17:17:52 - 55d86437-0aa6-4380-8c98-b15db1fc5c3c - error - jwt must be provided - /api/v1/e-commerce/user/logout - {"message":"undefined - NaNms - response: \"jwt must be provided\""}
+2024-07-03 17:23:56 - ba4ae649-7fd9-4c20-9a36-acbd4cbe6847 - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:23:56 - ba4ae649-7fd9-4c20-9a36-acbd4cbe6847 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-03 17:24:54 - 4cfe655c-0131-4acb-a66b-2f06eef0c91d - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:24:54 - 4cfe655c-0131-4acb-a66b-2f06eef0c91d - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-03 17:26:26 - 01b0c758-f67d-43ec-b72c-dcb45f7a22b5 - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:32:46 - 1df63457-2acb-4b6f-af26-84cc77f9416c - info - Input params::POST - /api/v1/e-commerce/user/login - {"email":"huynhnhathao0609@gmail.com","password":"sZ5qrBDR"}
+2024-07-03 17:33:28 - 49a46945-5d16-4263-94b8-d860d1f9a707 - info - Input params::DELETE - /api/v1/e-commerce/user/logout - {}

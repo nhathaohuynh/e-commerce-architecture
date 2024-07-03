@@ -1,12 +1,10 @@
-const { STATUS_CODE_REPONSE } = require('../constants')
 const { userRepository } = require('../repositories')
-const crypto = require('crypto')
 const {
 	generateSalt,
 	hashPassword,
-	generateToken,
 	getFieldsOfObject,
 	generateRandomPassword,
+	comparePassword,
 } = require('../utils')
 const keyTokenService = require('./keyToken.service')
 const { BadRequest } = require('../cores/custom-http-response/response.error')
@@ -51,34 +49,8 @@ class UserService {
 
 		if (!user) throw new BadRequest('User not created')
 
-		const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', {
-			modulusLength: 4096,
-			publicKeyEncoding: {
-				type: 'pkcs1', // key cryptoGraphy keystore standaers
-				format: 'pem',
-			},
-
-			privateKeyEncoding: {
-				type: 'pkcs1', // key cryptoGraphy keystore standaers
-				format: 'pem',
-			},
-		})
-
-		await keyTokenService.createKeyToken({
-			user: { id: user._id },
-			publicKey,
-		})
-
-		const accessToken = generateToken({
-			user: { id: user._id, email: user.email },
-			privateKey,
-			expirseIn: '1h',
-		})
-		const refreshToken = generateToken({
-			user: { id: user._id, email: user.email },
-			privateKey,
-			expirseIn: '7d',
-		})
+		const { accessToken, refreshToken } =
+			await keyTokenService.generateAccessAndRefreshToken({ user })
 
 		return {
 			data: {
@@ -88,6 +60,39 @@ class UserService {
 			},
 		}
 	}
+
+	async login({ email, password }) {
+		const user = await userRepository.findUserByEmail(email)
+		if (!user) throw new BadRequest('User not found')
+
+		const isPasswordMatch = await comparePassword(password, user.password)
+		if (!isPasswordMatch) throw new BadRequest('Password not match')
+
+		const { accessToken, refreshToken } =
+			await keyTokenService.generateAccessAndRefreshToken({ user })
+
+		return {
+			data: {
+				user: getFieldsOfObject(user, ['email', 'name']),
+				accessToken,
+				refreshToken,
+			},
+		}
+	}
+
+	async logout(user) {
+		const response = await keyTokenService.removeKeyTokenByUserID(user.id)
+
+		if (response?.deletedCount < 1) throw new BadRequest('Logout failed')
+
+		return {
+			data: {
+				userID: user.id,
+			},
+		}
+	}
+
+	async refreshToken(user) {}
 }
 
 module.exports = new UserService()

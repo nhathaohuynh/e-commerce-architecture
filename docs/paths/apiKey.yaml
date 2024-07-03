@@ -1,0 +1,42 @@
+post:
+  tags:
+    - API Key Controller
+  summary: Create a new API key
+  security:
+    - x-api-key: []
+    - x-client-id: []
+    - bearerAuth: []
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          type: object
+          required:
+            - permissions
+          properties:
+            permissions:
+              type: array
+              example: ['2222', '3333']
+  responses:
+    '201':
+      description: Created
+    '404':
+      description: Not Found
+    '500':
+      description: Server Error
+get:
+  tags:
+    - API Key Controller
+  summary: Get list API keys
+  security:
+    - x-api-key: []
+    - x-client-id: []
+    - bearerAuth: []
+  responses:
+    '200':
+      description: Ok
+    '404':
+      description: Not Found
+    '500':
+      description: Server Error

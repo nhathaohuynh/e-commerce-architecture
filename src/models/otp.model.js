@@ -8,11 +8,10 @@
  */
 
 const { model, Schema } = require('mongoose')
-const { USER_STATUS } = require('../constants')
+const { USER_STATUS, EXPIRED_TIME } = require('../constants')
 
-const COLLECTION_NAME = 'Otp_logs'
-const DOCUMENT_NAME = 'Otp_log'
-const EXPIRE_TIME = '2m'
+const COLLECTION_NAME = 'OTPLogs'
+const DOCUMENT_NAME = 'OTPLog'
 
 const otpShema = new Schema(
 	{
@@ -34,7 +33,7 @@ const otpShema = new Schema(
 		expireAt: {
 			type: Date,
 			default: Date.now,
-			index: { expires: EXPIRE_TIME },
+			index: { expires: EXPIRED_TIME.VERIFY_EMAIL },
 		},
 	},
 	{

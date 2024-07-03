@@ -22,6 +22,11 @@ const KeyTokenSchema = new Schema(
 			typpe: Array,
 			default: [],
 		},
+
+		refreshTokenUsed: {
+			type: Array,
+			default: [],
+		},
 	},
 	{
 		timestamps: true,

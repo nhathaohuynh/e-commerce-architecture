@@ -18,6 +18,10 @@ class APIKeyService {
 			data: getFieldsOfObject(apiKey, ['key', 'permissions']),
 		}
 	}
+
+	async removeAPIKey() {}
+
+	async getListAPIKey() {}
 }
 
 module.exports = new APIKeyService()

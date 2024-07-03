@@ -7,18 +7,17 @@ servers:
   - url: http://localhost:8080/api/v1/e-commerce
     description: Local server
 paths:
+  /APIKey:
+    $ref: './paths/apiKey.yaml'
+  /APIKey/{id}:
+    $ref: './paths/apiKeyID.yaml'
   /user/register:
     post:
       tags:
         - User Controller
       summary: Register
-      parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          description: API key for authorization
+      security:
+        - x-api-key: []
       requestBody:
         required: true
         content:
@@ -45,13 +44,9 @@ paths:
       tags:
         - User Controller
       summary: Verification account via email
+      security:
+        - x-api-key: []
       parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          description: API key for authorization
         - name: token
           in: query
           required: true
@@ -61,24 +56,17 @@ paths:
       responses:
         '201':
           description: Created
-        '409':
-          description: Conflict
         '404':
           description: Not Found
         '500':
           description: Server Error
-  /template/create:
+  /user/login:
     post:
       tags:
-        - Template Controller
-      summary: Create a template
-      parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          description: API key for authorization
+        - User Controller
+      summary: User login with email and password
+      security:
+        - x-api-key: []
       requestBody:
         required: true
         content:
@@ -86,23 +74,41 @@ paths:
             schema:
               type: object
               required:
-                - name
+                - email
+                - password
               properties:
-                name:
+                email:
                   type: string
-                  example: 'HTML_EMAIL_SEND_TOKEN'
+                  example: 'example@gmail.com'
+                password:
+                  type: string
       responses:
         '201':
           description: Created
-        '409':
-          description: Conflict
         '404':
           description: Not Found
         '500':
           description: Server Error
-# components:
-#   securitySchemes:
-#     ApiKeyAuth:
-#       type: apiKey
-#       in: header
-#       name: x-api-key
+  /user/logout:
+    delete:
+      tags:
+        - User Controller
+      summary: User login with email and password
+      security:
+        - bearerAuth: []
+        - apiKey: []
+        - clientID: []
+      responses:
+        '200':
+          description: Created
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+  /template/:
+    $ref: './paths/templateMail.yaml'
+  /template/{id}:
+    $ref: './paths/templateMailID.yaml'
+components:
+  securitySchemes:
+    $ref: './schemas/securitySchemes.yaml'

@@ -3,7 +3,7 @@
 const APIKey = require('./APIKey.controller')
 
 module.exports = {
-	userController: require('./access.controller'),
+	userController: require('./user.controller'),
 	APIKeyController: require('./APIKey.controller'),
 	templateController: require('./template.controller'),
 }

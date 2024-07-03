@@ -8,7 +8,13 @@ class UserRepository {
 	}
 
 	async createUser({ email, name, password }) {
-		return await userModel.create({ email, name, password })
+		return await userModel.create({
+			email,
+			name,
+			password,
+			status: 'active',
+			verify: true,
+		})
 	}
 }
 

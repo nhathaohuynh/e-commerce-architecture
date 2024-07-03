@@ -6,4 +6,23 @@ const templateSchema = z.object({
 	}),
 })
 
-module.exports = templateSchema
+const updateTemplateSchema = z.object({
+	params: z.object({
+		id: z.string(),
+	}),
+	body: z.object({
+		name: z.string(),
+	}),
+})
+
+const deleteTemplateSchema = z.object({
+	params: z.object({
+		id: z.string(),
+	}),
+})
+
+module.exports = {
+	templateSchema,
+	updateTemplateSchema,
+	deleteTemplateSchema,
+}

@@ -26,7 +26,7 @@ class Logger {
 					datePattern: 'YYYY-MM-DD',
 					zippedArchive: true, // create zip file
 					maxSize: '20m', // rotate log after 20MB
-					maxFiles: '14d', // delete log after 14 days
+					maxFiles: '5d', // delete log after 14 days
 					format: format.combine(
 						format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
 						formatPrint,
@@ -40,7 +40,7 @@ class Logger {
 					datePattern: 'YYYY-MM-DD',
 					zippedArchive: true, // create zip file
 					maxSize: '20m', // rotate log after 20MB
-					maxFiles: '14d', // delete log after 14 days
+					maxFiles: '5d', // delete log after 14 days
 					format: format.combine(
 						format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
 						formatPrint,

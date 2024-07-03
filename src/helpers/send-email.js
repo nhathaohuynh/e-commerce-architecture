@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer')
 const { email } = require('../configs/config-env')
-const Logger = require('../loggers')
 
 const sendMail = async (options) => {
 	const transporter = nodemailer.createTransport({
@@ -20,9 +19,7 @@ const sendMail = async (options) => {
 		html: options.html,
 	}
 
-	const response = await transporter.sendMail(mailOptions)
-
-	Logger.log(`Email sent: ${response.envelope}`, [])
+	transporter.sendMail(mailOptions)
 }
 
 module.exports = sendMail

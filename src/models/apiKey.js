@@ -3,8 +3,8 @@
 const { model, Schema } = require('mongoose')
 const { PERMISSIONS } = require('../constants')
 
-const COLLECTION_NAME = 'ApiKeys'
-const DOCUEMNT_NAME = 'ApiKey'
+const COLLECTION_NAME = 'APIKeys'
+const DOCUEMNT_NAME = 'APIKey'
 
 const ApiKeySchema = new Schema({
 	key: {

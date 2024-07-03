@@ -6,7 +6,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "bundle-swagger": "swagger-cli bundle docs/api.yaml --outfile docs/openapi.yaml --type yaml",
+    "start": "npm run bundle-swagger && npm run dev"
   },
   "keywords": [],
   "author": "",

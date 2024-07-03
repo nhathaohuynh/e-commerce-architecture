@@ -16,6 +16,8 @@ module.exports = {
 		API_KEY: 'x-api-key',
 		AUTHORIZATION: 'authorization',
 		REQUEST_ID: 'x-request-id',
+		CLIENT_ID: 'x-client-id',
+		REFRESH_TOKEN: 'x-refresh-token',
 	},
 
 	TEMPLATE_NAME: {
@@ -24,4 +26,10 @@ module.exports = {
 	},
 
 	PERMISSIONS: ['2222', '3333', '4444', '5555'],
+
+	EXPIRED_TIME: {
+		VERIFY_EMAIL: '5m',
+		ACCESS_TOKEN: '10m',
+		REFRESH_TOKEN: '7d',
+	},
 }

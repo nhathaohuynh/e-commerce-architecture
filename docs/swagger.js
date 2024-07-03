@@ -3,7 +3,7 @@ const swaggerUi = require('swagger-ui-express')
 const path = require('path')
 const fs = require('fs')
 
-const yaml = fs.readFileSync(path.join(__dirname, '/api.yaml'), 'utf8')
+const yaml = fs.readFileSync(path.join(__dirname, '/openapi.yaml'), 'utf8')
 const swaggerDocument = require('js-yaml').load(yaml)
 
 const swaggerOptions = {

@@ -12,7 +12,11 @@ class TemplateService {
 		})
 	}
 
-	getTemplate() {}
+	async getListTemplate() {}
+
+	async updateTemplate() {}
+
+	async removeTemplate() {}
 }
 
 module.exports = new TemplateService()

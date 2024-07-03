@@ -5,6 +5,7 @@ Welcome to our E-Commerce Platform, a comprehensive solution designed to revolut
 ## Features
 
 - **Scalable & Clean Architecture**: `Designed to scale system`, our platform can handle an increasing load, ensuring smooth operation during peak times. Flow of my project `Request -> Validation -> Route -> Controller -> Service -> (Thrid-Party, Redis, Message Queue) -> Repository -> Model -> MongoDB`
+- **Docs API**: Docs api with swagger with file yaml
 - **Logs System**: Write all proccessing active of system ( `Tracking ID request` )
 - **User Management**: Administrators can easily manage user accounts, including creating new users and handling authentication processes.
 - **Secure User Authentication**: Utilizing `RSA encryption` for secure data transmission and bcrypt for password hashing, we ensure that user credentials are protected at all times.
@@ -24,7 +25,7 @@ To get started with our E-Commerce Platform, follow these steps:
 
 ## Documentation
 
-For more detailed information about our platform's features and how to use them, please refer to the [docs](http://localhost:8080/docs) folder in the repository.
+For more detailed information about our platform's features and how to use them, please refer to the [docs](http://localhost:8080/docs) ( Swagger ) folder in the repository.
 
 ## Contributing
 

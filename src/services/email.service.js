@@ -36,8 +36,6 @@ class EmailService {
 	}
 
 	async sendEmailTemporaryPassword({ password, email }) {
-		console.log('password', password)
-		console.log('email', email)
 		const template = await templateRepository.getTemplateByName({
 			name: TEMPLATE_NAME.HTML_EMAIL_SEND_TEMPORARY_PASSWORD,
 		})

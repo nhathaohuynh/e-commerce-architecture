@@ -1,0 +1,4 @@
+2024-07-04 00:05:23 - f1e143f4-b235-4cfb-a50f-c0b07cf518d0 - error - Forbidden - /api/v1/e-commerce/template - {"message":"403 - 2ms - response: \"Forbidden\""}
+2024-07-04 00:06:04 - 05e0ad3d-a306-433e-9884-5cc8fe0d4108 - error - Not found - /api/v1/e-commerce/template - {"message":"404 - NaNms - response: \"Not found\""}
+2024-07-04 00:08:08 - d4f958c0-75f1-4bf2-8986-5e30dad0d9ae - error - req is not defined - /api/v1/e-commerce/template/1234 - {"message":"undefined - NaNms - response: \"req is not defined\""}
+2024-07-04 00:11:46 - 2e94cedd-0602-457a-a7ef-63bab6fe4315 - error - Not found - /api/v1/e-commerce/template/%7Bid%7D - {"message":"404 - NaNms - response: \"Not found\""}
