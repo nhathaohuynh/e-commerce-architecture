@@ -32,7 +32,7 @@ class UserController {
 	}
 
 	async refreshToken(req, res) {
-		const metaData = await userService.refreshToken(req.user)
+		const metaData = await userService.refreshToken(req.user, req.refreshToken)
 
 		return new OKReponse({
 			metaData,

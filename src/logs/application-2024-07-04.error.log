@@ -2,3 +2,37 @@
 2024-07-04 00:06:04 - 05e0ad3d-a306-433e-9884-5cc8fe0d4108 - error - Not found - /api/v1/e-commerce/template - {"message":"404 - NaNms - response: \"Not found\""}
 2024-07-04 00:08:08 - d4f958c0-75f1-4bf2-8986-5e30dad0d9ae - error - req is not defined - /api/v1/e-commerce/template/1234 - {"message":"undefined - NaNms - response: \"req is not defined\""}
 2024-07-04 00:11:46 - 2e94cedd-0602-457a-a7ef-63bab6fe4315 - error - Not found - /api/v1/e-commerce/template/%7Bid%7D - {"message":"404 - NaNms - response: \"Not found\""}
+2024-07-04 11:40:06 - c0ff19d6-5e33-4416-8604-97d9c165a714 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 11:45:41 - 6769d9e8-b74a-4def-ba97-1a69bde0b1da - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 11:49:09 - dc6b76e1-8e2d-46c7-8c58-67af152b1ae3 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 11:50:09 - 3b0e763e-11cb-44e8-b68f-583fa861e707 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 11:51:55 - f816fffa-6496-4e9e-81a8-cf4cee5f99e8 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 11:53:02 - 411c1984-35cc-423a-954f-f56f81849986 - error - Forbidden - /api/v1/e-commerce/user/register - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 12:44:13 - 51e407ce-20a1-4c26-aa07-f9dab4108c27 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 2ms - response: \"Forbidden\""}
+2024-07-04 12:46:14 - 7af9e399-b4de-460b-aefc-392b04c50de1 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 12:53:20 - 630addb1-2db6-411c-be83-e31a9fe07932 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 12ms - response: \"Forbidden\""}
+2024-07-04 12:56:41 - 5cf8b28d-d668-4d4b-8ba1-71bcf7df4768 - error - email invalid email - /api/v1/e-commerce/user/login - {"message":"undefined - NaNms - response: \"email invalid email\""}
+2024-07-04 13:12:05 - 76b785d0-d9d0-4ce5-bdd1-4436ecdb095c - error - invalid signature - /api/v1/e-commerce/user/logout - {"message":"undefined - NaNms - response: \"invalid signature\""}
+2024-07-04 13:16:03 - e40fe8ec-45af-4048-a6d1-68bc001e5261 - error - jwt expired - /api/v1/e-commerce/user/logout - {"message":"undefined - NaNms - response: \"jwt expired\""}
+2024-07-04 13:36:17 - cdcfe43f-f30e-4207-8b2f-2e578e624261 - error - ForbiddenError is not defined - /api/v1/e-commerce/user/refresh-token - {"message":"undefined - NaNms - response: \"ForbiddenError is not defined\""}
+2024-07-04 13:38:36 - a67f5d6a-5a67-46b6-b41b-047670d9552c - error - Unauthorized - /api/v1/e-commerce/user/refresh-token - {"message":"401 - 0ms - response: \"Unauthorized\""}
+2024-07-04 13:39:33 - 51906fab-8488-428b-b2f7-d941da0fa5c6 - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 13:40:57 - ffb9b25d-b2da-4cfa-9edd-8112eee0d0ca - error - Forbidden - /api/v1/e-commerce/user/login - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 13:43:28 - 15a10d46-a12b-4c48-8859-263e3c42a364 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 13:46:42 - bf75cb40-521b-43b2-949b-5662fa2b9271 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 13:49:04 - cb01fd5e-407b-41ca-95a3-b9f5c3089c52 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 13:49:35 - e7a753a4-6045-43f6-a308-3e774aa01b18 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 13:50:26 - bb936566-d617-4acc-b76d-e04bd99d8f8c - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 13:51:09 - b2eeb8f9-58a5-430c-a1b1-e18753873db0 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 13:55:17 - 870348b3-5b83-458a-9e7b-52debfc4c05b - error - keyTokens.refreshToken.trim is not a function - /api/v1/e-commerce/user/refresh-token - {"message":"undefined - NaNms - response: \"keyTokens.refreshToken.trim is not a function\""}
+2024-07-04 13:57:20 - c74fbe47-7082-4a74-a54e-25771d864a00 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 13:58:13 - d2a47a1e-44c2-4a04-9d69-7c06a96d3b2d - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 14:00:40 - 40c6ae1f-0cce-4046-9e58-82edf4951459 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 14:01:52 - c4f89d1b-cdce-4c2b-9c61-14902a37f77f - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 14:02:28 - 9960bb25-dccc-4e56-b29b-6378e06313aa - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 14:03:14 - c4721881-7c62-469d-a322-7620c1843ce3 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 14:03:45 - 66510b06-ca04-4f04-9177-b2111f3c9bff - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 14:06:02 - 83e18126-2bc9-400b-b969-a5dd0022bf8a - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}
+2024-07-04 14:06:34 - 933ebef8-b9c1-48d9-a298-7db8c22bdc34 - error - decodedUser is not defined - /api/v1/e-commerce/user/refresh-token - {"message":"undefined - NaNms - response: \"decodedUser is not defined\""}
+2024-07-04 14:14:11 - 8469f5e5-8db3-4822-a7a1-ed4ffa01534d - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 0ms - response: \"Forbidden\""}
+2024-07-04 14:14:50 - 8f09e5d1-33f7-442c-856f-7eb3b1b17e96 - error - Forbidden - /api/v1/e-commerce/user/refresh-token - {"message":"403 - 1ms - response: \"Forbidden\""}

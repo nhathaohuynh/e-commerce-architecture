@@ -5,7 +5,7 @@ const { userController } = require('../controllers')
 const asyncHandler = require('../middleware/async-handler')
 const {
 	authentication,
-	authenticationAccessToken,
+	authenticationRefreshToken,
 } = require('../middleware/authentication')
 const { checkAPIKey, checkPermission } = require('../middleware/check-api-key')
 const validate = require('../middleware/validate')
@@ -38,9 +38,9 @@ route.get(
 	asyncHandler(userController.verifyEmail),
 )
 
-route.get(
+route.delete(
 	'/refresh-token',
-	authenticationAccessToken,
+	authenticationRefreshToken,
 	asyncHandler(userController.refreshToken),
 )
 // authenticate user

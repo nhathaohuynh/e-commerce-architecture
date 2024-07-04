@@ -29,7 +29,7 @@ module.exports = {
 
 	EXPIRED_TIME: {
 		VERIFY_EMAIL: '5m',
-		ACCESS_TOKEN: '10m',
+		ACCESS_TOKEN: '1m',
 		REFRESH_TOKEN: '7d',
 	},
 }

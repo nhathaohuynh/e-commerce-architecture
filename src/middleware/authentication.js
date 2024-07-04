@@ -2,6 +2,7 @@ const { HEADER } = require('../constants')
 const asyncHandler = require('./async-handler')
 const {
 	UnauthorizedError,
+	ForbiddenError,
 } = require('../cores/custom-http-response/response.error')
 const { verifyToken } = require('../utils')
 const keyTokenService = require('../services/keyToken.service')
@@ -20,8 +21,6 @@ module.exports = {
 			throw next(new UnauthorizedError())
 		}
 
-		console.log(req.headers)
-
 		const accessToken = req.headers[HEADER.AUTHORIZATION].split(' ')[1]
 
 		if (!accessToken) {
@@ -33,7 +32,7 @@ module.exports = {
 			key: keyTokens.publicKey,
 		})
 
-		console.log(decodedUser)
+		console.log('decodedUser', decodedUser)
 
 		if (!decodedUser || decodedUser?.user?.id !== userID) {
 			throw next(new UnauthorizedError())
@@ -44,7 +43,7 @@ module.exports = {
 		return next()
 	}),
 
-	authenticationAccessToken: asyncHandler(async (req, res, next) => {
+	authenticationRefreshToken: asyncHandler(async (req, res, next) => {
 		const userID = req.headers[HEADER.CLIENT_ID]
 
 		if (!userID) {
@@ -63,18 +62,27 @@ module.exports = {
 			throw next(new UnauthorizedError())
 		}
 
+		if (
+			keyTokens.refreshToken.toString() !== refreshToken.toString() ||
+			keyTokens.refreshTokenUsed.includes(refreshToken.toString())
+		) {
+			await keyTokenService.removeKeyTokenByUserID(userID)
+			throw next(new ForbiddenError())
+		}
+
 		const decodedUser = verifyToken({
 			token: refreshToken,
 			key: keyTokens.publicKey,
 		})
 
-		console.log(decodedUser)
+		console.log('decodedUser', decodedUser)
 
 		if (!decodedUser || decodedUser?.user?.id !== userID) {
 			throw next(new UnauthorizedError())
 		}
 
 		req.user = decodedUser.user
+		req.refreshToken = refreshToken
 
 		return next()
 	}),

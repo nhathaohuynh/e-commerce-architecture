@@ -50,11 +50,11 @@ class UserService {
 		if (!user) throw new BadRequest('User not created')
 
 		const { accessToken, refreshToken } =
-			await keyTokenService.generateAccessAndRefreshToken({ user })
+			await keyTokenService.generateAccessAndRefreshToken(user)
 
 		return {
 			data: {
-				user: getFieldsOfObject(user, ['email', 'name']),
+				user: getFieldsOfObject(user, ['email', '_id', 'name']),
 				accessToken,
 				refreshToken,
 			},
@@ -69,11 +69,11 @@ class UserService {
 		if (!isPasswordMatch) throw new BadRequest('Password not match')
 
 		const { accessToken, refreshToken } =
-			await keyTokenService.generateAccessAndRefreshToken({ user })
+			await keyTokenService.generateAccessAndRefreshToken(user)
 
 		return {
 			data: {
-				user: getFieldsOfObject(user, ['email', 'name']),
+				user: getFieldsOfObject(user, ['email', '_id', 'name']),
 				accessToken,
 				refreshToken,
 			},
@@ -92,7 +92,30 @@ class UserService {
 		}
 	}
 
-	async refreshToken(user) {}
+	async refreshToken(user, refreshToken) {
+		const keyTokens = await keyTokenService.findKeyTokenByUserID(user.id)
+		const refreshTokenUsed = [
+			refreshToken.toString(),
+			...keyTokens.refreshTokenUsed,
+		]
+
+		const { accessToken, refreshToken: newRefreshToken } =
+			await keyTokenService.generateAccessAndRefreshToken(
+				{
+					_id: user.id,
+					email: user.email,
+				},
+				refreshTokenUsed,
+			)
+
+		return {
+			data: {
+				user,
+				accessToken,
+				refreshToken: newRefreshToken,
+			},
+		}
+	}
 }
 
 module.exports = new UserService()

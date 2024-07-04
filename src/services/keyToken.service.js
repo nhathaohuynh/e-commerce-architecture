@@ -5,12 +5,18 @@ const { generateToken } = require('../utils')
 const { EXPIRED_TIME } = require('../constants')
 
 class KeyTokenService {
-	async createKeyToken({ user, publicKey, privateKey, refreshToken }) {
+	async createKeyToken({
+		user,
+		publicKey,
+		privateKey,
+		refreshToken,
+		refreshTokenUsed,
+	}) {
 		try {
 			const filter = { user: user.id }
 			const update = {
 				publicKey: publicKey.toString(),
-				refreshTokenUsed: [],
+				refreshTokenUsed: refreshTokenUsed,
 				refreshToken,
 			}
 			const options = { upsert: true, new: true }
@@ -27,7 +33,7 @@ class KeyTokenService {
 		}
 	}
 
-	async generateAccessAndRefreshToken({ user }) {
+	async generateAccessAndRefreshToken(user, refreshTokenUsed = []) {
 		const { publicKey, privateKey } = crypto.generateKeyPairSync('rsa', {
 			modulusLength: 4096,
 			publicKeyEncoding: {
@@ -57,6 +63,7 @@ class KeyTokenService {
 			publicKey,
 			privateKey,
 			refreshToken,
+			refreshTokenUsed,
 		})
 
 		return {
