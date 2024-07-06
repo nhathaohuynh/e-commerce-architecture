@@ -21,6 +21,12 @@ const dev = {
 	url: {
 		base_url: process.env.DEV_BASE_URL,
 	},
+
+	cloudinary: {
+		cloud_name: process.env.DEV_CLOUDINARY_CLOUD_NAME,
+		api_key: process.env.DEV_CLOUDINARY_API_KEY,
+		api_secret: process.env.DEV_CLOUDINARY_API_SECRET,
+	},
 }
 
 const pro = {
@@ -30,6 +36,7 @@ const pro = {
 
 	db: {
 		url: process.env.PRO_DB_MONGO_URL,
+		redis_url: process.env.PRO_REDIS_URL,
 	},
 
 	email: {
@@ -42,6 +49,12 @@ const pro = {
 
 	url: {
 		base_url: process.env.PRO_BASE_URL,
+	},
+
+	cloudinary: {
+		cloud_name: process.env.PRO_CLOUDINARY_CLOUD_NAME,
+		api_key: process.env.PRO_CLOUDINARY_API_KEY,
+		api_secret: process.env.PRO_CLOUDINARY_API_SECRET,
 	},
 }
 

@@ -7,6 +7,8 @@ Welcome to our E-Commerce Platform, a comprehensive solution designed to revolut
 - **Scalable & Clean Architecture**: `Designed to scale system`, our platform can handle an increasing load, ensuring smooth operation during peak times. Flow of my project `Request -> Validation -> Route -> Controller -> Service -> (Thrid-Party, Redis, Message Queue) -> Repository -> Model -> MongoDB`
 - **Docs API**: Docs api with `swagger` with file yaml
 - **Logs System**: Write all proccessing active of system ( `Tracking ID request` )
+- **Upload image service**: Using cloud to save image: `Cloudinary` and `dynamically resize` it based on width and height, and also `specify the type of image format`.
+- **Cloud Serivce**: AWS `S3 EC2 SES` ...
 - **Caching data**: Using `redis` to handle `caching` data and `rate limiting`
 - **User Management**: Administrators can easily manage user accounts, including creating new users and handling authentication processes.
 - **Secure User Authentication**: Utilizing `RSA encryption` for secure data transmission and bcrypt for password hashing, we ensure that user credentials are protected at all times.
