@@ -32,4 +32,13 @@ module.exports = {
 		ACCESS_TOKEN: '1m',
 		REFRESH_TOKEN: '7d',
 	},
+
+	STATUS_REDIS: {
+		END: 'end',
+		RECONNECT: 'reconnecting',
+		ERROR: 'error',
+	},
+
+	RATE_LIMIT_MAX_REQUESTS: 10,
+	RATE_LIMIT_WINDOW: 60,
 }

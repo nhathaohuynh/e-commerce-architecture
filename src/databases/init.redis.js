@@ -1,57 +1,53 @@
 const redis = require('redis')
-const { BadRequest } = require('../cores/custom-http-response/response.error')
+const { db } = require('../configs/config-env')
+const { STATUS_REDIS } = require('../constants')
 
-const STATUSREDIS = {
-	CONNECT: 'connect',
-	END: 'end',
-	RECONNECT: 'reconnecting',
-	ERROR: 'error',
+class RedisService {
+	constructor() {
+		this.client = redis.createClient(db.redis_url)
+		this.connect()
+	}
+
+	connect() {
+		this.setupEventHandler()
+		this.client
+			.connect()
+			.then(() => {
+				console.log('Redis connection status: connected')
+			})
+			.catch((err) => {
+				console.error('Failed to connect to Redis:', err)
+			})
+	}
+
+	static close() {
+		this.getClient().quit(() => {
+			console.log('Redis client disconnected')
+		})
+	}
+
+	setupEventHandler() {
+		this.client.on(STATUS_REDIS.END, () => {
+			console.log('Redis connection status: ended')
+		})
+
+		this.client.on(STATUS_REDIS.ERROR, (err) => {
+			console.log('Redis connection status: error', err)
+		})
+
+		this.client.on(STATUS_REDIS.RECONNECT, () => {
+			console.log('Redis connection status: reconnecting')
+		})
+	}
+
+	static getClient() {
+		// singleton pattern
+		if (!this.instance) {
+			this.instance = new RedisService()
+		}
+
+		return this.instance.client
+	}
 }
 
-let client = {}
-
-const REDIS_CONNECT_TIMEOUT = 10000
-const REDIS_CONNECT_MESSAGE = {
-	code: -999,
-	message: 'Service connection error',
-}
-
-const handleEventConnectRedis = (connectionRedis) => {
-	connectionRedis.connect()
-
-	connectionRedis.on(STATUSREDIS.CONNECT, () => {
-		console.log('Redis connection status: connected')
-	})
-
-	connectionRedis.on(STATUSREDIS.END, () => {
-		console.log('Redis connection status: end')
-	})
-
-	connectionRedis.on(STATUSREDIS.ERROR, () => {
-		console.log('Redis connection status: error')
-	})
-
-	connectionRedis.on(STATUSREDIS.RECONNECT, () => {
-		console.log('Redis connection status: reconnecting')
-	})
-}
-
-const initRedis = async () => {
-	const instanceRedis = redis.createClient()
-
-	client.instanceConnect = instanceRedis
-	handleEventConnectRedis(instanceRedis)
-}
-
-const getRedis = () => client
-
-const closeRedis = () =>
-	client.instanceConnect.quit(() => {
-		console.log('Redis client disconnected')
-	})
-
-module.exports = {
-	initRedis,
-	getRedis,
-	closeRedis,
-}
+module.exports = RedisService

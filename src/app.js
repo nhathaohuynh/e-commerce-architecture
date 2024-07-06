@@ -6,7 +6,6 @@ const { errorHandler } = require('./middleware/error-handler')
 const { notFound } = require('./middleware/404-not-found')
 const swaggerDocs = require('../docs/swagger')
 const { writeLogStartRequest } = require('./middleware/write-log')
-const { initRedis } = require('./databases/init.redis')
 
 // const { checkOverload } = require('./helpers/check-connect')
 
@@ -27,8 +26,6 @@ swaggerDocs(app)
 // init dbs
 
 require('./databases')
-initRedis()
-// checkOverload()  //check the overload of the server
 
 // route
 

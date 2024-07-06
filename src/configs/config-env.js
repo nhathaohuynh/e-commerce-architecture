@@ -6,19 +6,20 @@ const dev = {
 	},
 
 	db: {
-		url: process.env.DEV_DB_MONGO_URL,
+		mongo_url: process.env.DEV_MONGO_URL,
+		redis_url: process.env.DEV_REDIS_URL,
 	},
 
 	email: {
-		host: process.env.SMTP_HOST,
-		port: process.env.SMTP_PORT,
-		service: process.env.SMTP_SERVICE,
-		mail: process.env.SMTP_MAIL,
-		password: process.env.SMTP_PASSWORD,
+		host: process.env.DEV_SMTP_HOST,
+		port: process.env.DEV_SMTP_PORT,
+		service: process.env.DEV_SMTP_SERVICE,
+		mail: process.env.DEV_SMTP_MAIL,
+		password: process.env.DEV_SMTP_PASSWORD,
 	},
 
 	url: {
-		base_url: process.env.BASE_URL,
+		base_url: process.env.DEV_BASE_URL,
 	},
 }
 

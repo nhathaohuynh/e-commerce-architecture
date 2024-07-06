@@ -9,6 +9,7 @@ const {
 const keyTokenService = require('./keyToken.service')
 const { BadRequest } = require('../cores/custom-http-response/response.error')
 const emailService = require('./email.service')
+const { getRedis } = require('../databases/init.redis')
 
 class UserService {
 	async register({ email }) {
@@ -17,9 +18,7 @@ class UserService {
 		if (holderUser) throw new BadRequest('User already registered')
 		await emailService.sendEmailVerifyToken({ email })
 
-		return {
-			data: null,
-		}
+		return
 	}
 
 	async verifyEmail(token) {

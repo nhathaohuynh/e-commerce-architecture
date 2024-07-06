@@ -24,6 +24,15 @@ class ConflictError extends ErrorReponse {
 	}
 }
 
+class InternalServerError extends ErrorReponse {
+	constructor(
+		message = ReasonPhrases.INTERNAL_SERVER_ERROR,
+		status = statusCodes.INTERNAL_SERVER_ERROR,
+	) {
+		super(message, status)
+	}
+}
+
 class ForbiddenError extends ErrorReponse {
 	constructor(
 		message = ReasonPhrases.FORBIDDEN,
@@ -67,4 +76,5 @@ module.exports = {
 	UnauthorizedError,
 	TooManyRequest,
 	NotFoundError,
+	InternalServerError,
 }

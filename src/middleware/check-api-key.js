@@ -7,8 +7,6 @@ const { apiKeyRepository } = require('../repositories')
 const checkAPIKey = async (req, res, next) => {
 	const key = req.headers[HEADER.API_KEY]
 
-	console.log(req.headers)
-
 	if (!key) {
 		return next(new ForbiddenError())
 	}
