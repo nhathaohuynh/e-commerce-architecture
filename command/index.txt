@@ -44,3 +44,8 @@ sudo apt-get install python3-certbot-nginx
 sudo certbot --nginx -d shopdev.anonystick.com
 sudo certbot renew --dry-run
 sudo systemctl status certbot.timer
+
+
+4. Push env to EC2
+
+```scp -i /path/to/your-key.pem /path/to/.env ubuntu@your-ec2-instance:/path/to/your-app/
