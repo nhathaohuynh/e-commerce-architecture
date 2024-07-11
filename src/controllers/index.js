@@ -6,4 +6,5 @@ module.exports = {
 	userController: require('./user.controller'),
 	APIKeyController: require('./APIKey.controller'),
 	templateController: require('./template.controller'),
+	uploadController: require('./upload.controller'),
 }

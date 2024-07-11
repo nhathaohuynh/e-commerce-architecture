@@ -1,6 +1,6 @@
 const { StatusCodes, ReasonPhrases } = require('./httpStatusCode')
 
-class SuccessReponse {
+class SuccessResponse {
 	constructor({
 		message,
 		statusCode = StatusCodes.OK,
@@ -17,7 +17,7 @@ class SuccessReponse {
 	}
 }
 
-class CreatedReponse extends SuccessReponse {
+class CreatedResponse extends SuccessResponse {
 	constructor({ message, metaData }) {
 		super({
 			message,
@@ -28,7 +28,7 @@ class CreatedReponse extends SuccessReponse {
 	}
 }
 
-class OKReponse extends SuccessReponse {
+class OKResponse extends SuccessResponse {
 	constructor({ message, metaData }) {
 		super({
 			message,
@@ -39,7 +39,7 @@ class OKReponse extends SuccessReponse {
 	}
 }
 
-class NoContentReponse extends SuccessReponse {
+class NoContentResponse extends SuccessResponse {
 	constructor({ message = ReasonPhrases.NO_CONTENT, metaData }) {
 		super({
 			message,
@@ -51,7 +51,7 @@ class NoContentReponse extends SuccessReponse {
 }
 
 module.exports = {
-	CreatedReponse,
-	OKReponse,
-	NoContentReponse,
+	CreatedResponse,
+	OKResponse,
+	NoContentResponse,
 }

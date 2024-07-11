@@ -27,6 +27,13 @@ const dev = {
 		api_key: process.env.DEV_CLOUDINARY_API_KEY,
 		api_secret: process.env.DEV_CLOUDINARY_API_SECRET,
 	},
+
+	aws: {
+		region: process.env.DEV_S3_AWS_REGION,
+		s3_accessKeyId: process.env.DEV_S3_ACCESS_KEY,
+		s3_secretAccessKey: process.env.DEV_S3_SECRET_KEY,
+		s3_bucket_name: process.env.DEV_S3_BUCKET_NAME,
+	},
 }
 
 const pro = {

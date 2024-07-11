@@ -260,6 +260,64 @@ paths:
           description: Not Found
         '500':
           description: Server Error
+
+  /upload/image:
+    post:
+      tags:
+        - Upload Controller
+      summary: Upload file with Cloudinary
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '201':
+          description: Created
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+
+  /upload/aws-s3:
+    post:
+      tags:
+        - Upload Controller
+      summary: Upload file with AWS S3
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '201':
+          description: Created
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
 components:
   securitySchemes:
     bearerAuth:

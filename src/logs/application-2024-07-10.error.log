@@ -1,0 +1,13 @@
+2024-07-10 21:26:38 - a43c5218-08d5-4d1b-8b27-764afb8d2187 - error - Error uploading to Cloudinary - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to Cloudinary\""}
+2024-07-10 21:43:12 - 29d0bf93-d797-4a46-afd9-cb5e143ce235 - error - Error uploading to Cloudinary - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to Cloudinary\""}
+2024-07-10 21:43:51 - 1a748e5e-14b1-4091-bf21-f615807c1c6c - error - Error uploading to  - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 3ms - response: \"Error uploading to \""}
+2024-07-10 21:44:26 - caa2e282-7aa4-4e6d-aca5-07d46af00e38 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-10 21:46:31 - fb0c9702-4e39-4c33-b481-17c93392bae8 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-10 21:49:27 - 8eae5d31-f85d-41a6-977e-45e2cd3d4cce - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-10 21:50:50 - edf68dd5-e828-4364-a766-d9a2c501302c - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-10 21:52:35 - 721ce817-1a37-4d38-b172-e5c61bc1ac59 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-10 21:53:54 - ecb64825-aedc-4f26-b9d8-6ee5d3a88ef4 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-10 21:58:24 - afd6bb11-a954-4302-bc50-c47e4204af44 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-10 22:03:01 - 47e30dc5-6bcd-46b3-b53f-a854ef429e32 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-10 22:03:59 - 9c39814d-5015-4d84-bbc2-c44f5f4ad381 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-10 22:05:01 - f8ddfd20-9e91-41f3-b847-411752ecf6fc - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
