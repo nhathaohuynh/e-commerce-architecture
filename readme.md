@@ -9,7 +9,7 @@ Welcome to our E-Commerce Platform, a comprehensive solution designed to revolut
 - **Logs System**: Write all proccessing active of system ( `Tracking ID request` )
 - **Upload image service**: Using cloud to save image: `Cloudinary` and `dynamically resize` it based on width and height, and also `specify the type of image format`.
 - **Cloud Serivce**: AWS `S3 EC2 SES IAM Cloudfront (cnd)` ...
-- **CI/CD & Reverse proxy**: Using `technical CI/CD of github Action to EC2` and using `nginx to Reserve Proxy`
+- **CI/CD & Reverse proxy**: Using `technical CI/CD of github Action to EC2` and using `nginx to Reserve Proxy` and `Pm2 to manage scaling server`, add domain and SSL
 - **User Management**: Administrators can easily manage user accounts, including creating new users and handling authentication processes.
 - **Secure User Authentication**: Utilizing `RSA encryption` for secure data transmission and bcrypt for password hashing, we ensure that user credentials are protected at all times.
 

@@ -1,13 +1,13 @@
-
 1. Reverse Proxy Nginx
+
 ```bash
-sudo apt-get install -y nginx 
+sudo apt-get install -y nginx
 run ip, not wokring then htto open secirity
 cd /etc/nginx/sites-available
 
 sudo vim default
 
-location /api { 
+location /api {
  rewrite ^\/api\/(.*)$ /api/$1 break;
  proxy_pass  http://localhost:3000;
  proxy_set_header Host $host;
@@ -21,12 +21,11 @@ sudo systemctl restart nginx
 
 2. Add domain to nginx configuration
 
-
 ```bash
 server_name shopdev.anonystick.com www.shopdev.anonystick.com;
 
 location / {
-    proxy_pass http://localhost:3000; 
+    proxy_pass http://localhost:3000;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection 'upgrade';
@@ -35,9 +34,9 @@ location / {
 }
 ```
 
-3. add SSL to domain 
+3. add SSL to domain
 
-```bash
+````bash
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 sudo apt-get install python3-certbot-nginx
@@ -49,3 +48,4 @@ sudo systemctl status certbot.timer
 4. Push env to EC2
 
 ```scp -i /path/to/your-key.pem /path/to/.env ubuntu@your-ec2-instance:/path/to/your-app/
+````
