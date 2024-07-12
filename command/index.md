@@ -36,7 +36,7 @@ location / {
 
 3. add SSL to domain
 
-````bash
+`````bash
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
 sudo apt-get install python3-certbot-nginx
@@ -48,4 +48,7 @@ sudo systemctl status certbot.timer
 4. Push env to EC2
 
 ```scp -i /path/to/your-key.pem /path/to/.env ubuntu@your-ec2-instance:/path/to/your-app/
-````
+
+5. openssl genrsa key
+````openssl genrsa -out private_key_for_cloudfront.pem 2048
+`````

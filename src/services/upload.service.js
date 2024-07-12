@@ -12,7 +12,10 @@ const {
 } = require('../configs/s3-aws.config')
 const { aws } = require('../configs/config-env')
 // const { Upload } = require('@aws-sdk/lib-storage')
-const { getSignedUrl } = require('@aws-sdk/s3-request-presigner')
+// const { getSignedUrl } = require('@aws-sdk/s3-request-presigner')
+
+const { getSignedUrl } = require('@aws-sdk/cloudfront-signer')
+const path = require('path')
 
 class UploadService {
 	async uploadImage(file, userID = '12312') {
@@ -54,6 +57,8 @@ class UploadService {
 
 		const keyName = `${userID}_${Date.now()}_${file.originalname}`
 
+		// 'your-folder-name/image.jpg'
+
 		try {
 			const command = new PutObjectCommand({
 				Bucket: aws.s3_bucket_name,
@@ -64,12 +69,30 @@ class UploadService {
 
 			await s3.send(command)
 
-			const signedUrl = new GetObjectCommand({
-				Bucket: aws.s3_bucket_name,
-				Key: keyName,
-			})
+			// const signedUrl = new GetObjectCommand({
+			// 	Bucket: aws.s3_bucket_name,
+			// 	Key: keyName,
+			// })
 
-			const url = await getSignedUrl(s3, signedUrl, { expiresIn: 3600 })
+			// const url =  getSignedUrl(s3, signedUrl, { expiresIn: 3600 })
+
+			const privateKeyPath = path.join(
+				__dirname,
+				'../../ssh/private_key_for_cloudfront.pem',
+			)
+
+			// read the private key from folder ssh
+			const privateKey = fs.readFileSync(privateKeyPath, 'utf-8').toString()
+
+			console.log(`${aws.cloudfront_url}/${keyName}`)
+
+			// have cloudfront url export
+			const url = getSignedUrl({
+				url: `${aws.cloudfront_url}/${keyName}`,
+				keyPairId: aws.cloudfront_key_pair_id,
+				dateLessThan: new Date(Date.now() + 1000 * 60), // exirse in 60s
+				privateKey,
+			})
 
 			console.log('url', url)
 			// const parallelUploads3 = new Upload({
@@ -85,7 +108,7 @@ class UploadService {
 
 			return {
 				data: {
-					url: url,
+					url,
 				},
 			}
 		} catch (error) {

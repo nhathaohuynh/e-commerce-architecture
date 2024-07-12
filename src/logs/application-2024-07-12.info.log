@@ -1,0 +1,22 @@
+2024-07-12 19:37:51 - a9446579-18bb-40a4-bc9a-0d6e010ff9a6 - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:03:16 - c58de854-4eb8-4556-aada-eafef9e455e9 - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:03:17 - c58de854-4eb8-4556-aada-eafef9e455e9 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:03:39 - c2e8d330-4808-440e-a721-fdca09e15dac - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:03:40 - c2e8d330-4808-440e-a721-fdca09e15dac - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:05:16 - dc2f52d9-a78b-4528-b143-61b6cfc1a68b - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:05:17 - dc2f52d9-a78b-4528-b143-61b6cfc1a68b - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:05:58 - ac5b573d-6400-45d5-b692-4094b8400c49 - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:05:59 - ac5b573d-6400-45d5-b692-4094b8400c49 - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:08:14 - fd8eeccf-762e-4d44-8e39-27c3b44f922c - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:08:15 - fd8eeccf-762e-4d44-8e39-27c3b44f922c - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:09:03 - 759ba684-6f44-4d83-a4ce-eda8a93cb01f - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:09:04 - 759ba684-6f44-4d83-a4ce-eda8a93cb01f - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:09:36 - 3f578d17-6d94-4cb0-b870-9eb06fcaceea - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:09:37 - 3f578d17-6d94-4cb0-b870-9eb06fcaceea - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:10:30 - 0d376806-7618-4615-b5cd-4e8827f7021d - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:10:31 - 0d376806-7618-4615-b5cd-4e8827f7021d - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 1ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:10:48 - a9e79a38-c664-4312-88e9-e418dc0a526e - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:10:49 - a9e79a38-c664-4312-88e9-e418dc0a526e - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 3ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:12:08 - eab1b7d5-a443-46d9-8126-e592538c03be - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
+2024-07-12 20:12:09 - eab1b7d5-a443-46d9-8126-e592538c03be - error - Error uploading to aws s3 - /api/v1/e-commerce/upload/aws-s3 - {"message":"500 - 2ms - response: \"Error uploading to aws s3\""}
+2024-07-12 20:12:34 - 54f1f4d9-590d-4e42-b2dd-ad1b07d032e4 - info - Input params::POST - /api/v1/e-commerce/upload/aws-s3 - {}
