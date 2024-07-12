@@ -39,6 +39,13 @@ module.exports = {
 		ERROR: 'error',
 	},
 
+	SIZE: {
+		M: 'M',
+		L: 'L',
+		XL: 'XL',
+		XXL: 'XXL',
+	},
+
 	RATE_LIMIT_MAX_REQUESTS: 10,
 	RATE_LIMIT_WINDOW: 60,
 }
