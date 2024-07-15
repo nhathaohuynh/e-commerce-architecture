@@ -1,7 +1,11 @@
-class Product {
-	constructor({}) {}
+class ProductService {
+	constructor() {
+		this.productRepository = require('../../repositories/product_repo/product.repo')
+	}
 
-	async createProduct() {}
+	async createProduct(product) {
+		await this.productRepository.createProduct(product)
+	}
 }
 
-module.exports = Product
+module.exports = ProductService
