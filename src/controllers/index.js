@@ -7,4 +7,5 @@ module.exports = {
 	APIKeyController: require('./APIKey.controller'),
 	templateController: require('./template.controller'),
 	uploadController: require('./upload.controller'),
+	productController: require('./product.controller'),
 }

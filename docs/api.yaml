@@ -318,6 +318,122 @@ paths:
           description: Not Found
         '500':
           description: Server Error
+
+  /product/:
+    post:
+      tags:
+        - Product Controller
+      summary: Create a product
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - name
+              properties:
+                name:
+                  type: string
+                  example: 'HTML_EMAIL_SEND_TOKEN'
+      responses:
+        '201':
+          description: Created
+        '409':
+          description: Conflict
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+    get:
+      tags:
+        - Product Controller
+      summary: Get list products
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+
+  /product/{id}:
+    delete:
+      tags:
+        - Product Controller
+      summary: delete a product
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: id
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+    put:
+      tags:
+        - Product Controller
+      summary: update a product
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: id
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+
+    get:
+      tags:
+        - Product Controller
+      summary: get a product
+      security:
+        - apiKey: []
+        - clientID: []
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: id
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+        '500':
+          description: Server Error
+
 components:
   securitySchemes:
     bearerAuth:

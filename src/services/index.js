@@ -3,4 +3,5 @@ module.exports = {
 	APIKeyService: require('./apiKey.service'),
 	templateService: require('./template.service'),
 	uploadService: require('./upload.service'),
+	productFactory: require('./product'),
 }

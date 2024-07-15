@@ -33,6 +33,8 @@ const dev = {
 		s3_accessKeyId: process.env.DEV_S3_ACCESS_KEY,
 		s3_secretAccessKey: process.env.DEV_S3_SECRET_KEY,
 		s3_bucket_name: process.env.DEV_S3_BUCKET_NAME,
+		cloudfront_url: process.env.DEV_CLOUDFRONT_URL,
+		cloudfront_key_pair_id: process.env.DEV_CLOUDFRONT_KEY_PAIR_ID,
 	},
 }
 

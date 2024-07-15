@@ -12,5 +12,6 @@ route.use('/user', require('./user.route'))
 route.use('/APIKey', require('./APIKey.route'))
 route.use('/template', require('./template.route'))
 route.use('/upload', require('./upload.route'))
+route.use('/product', require('./product.route'))
 
 module.exports = route
