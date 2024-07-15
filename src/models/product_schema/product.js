@@ -26,8 +26,14 @@ const productSchema = new Schema(
 			type: Number,
 			required: true,
 		},
+
 		quantity: {
 			type: Number,
+		},
+
+		type: {
+			type: String,
+			required: true,
 		},
 
 		category: {

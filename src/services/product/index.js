@@ -3,7 +3,7 @@ const laptopService = require('./laptop.service')
 const clothesService = require('./clothes.service')
 
 class ProductFactory {
-	async createProduct(productType, payload) {
+	async createProduct({ productType, payload }) {
 		const product = this.getProduct(productType)
 		await product.createProduct(payload)
 	}

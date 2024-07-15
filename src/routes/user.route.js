@@ -8,7 +8,7 @@ const {
 	authenticationRefreshToken,
 } = require('../middleware/authentication')
 const { checkAPIKey, checkPermission } = require('../middleware/check-api-key')
-const validate = require('../middleware/validate')
+const { validate } = require('../middleware/validate')
 const {
 	userRegisterSchema,
 	userVerifyEmailSchema,

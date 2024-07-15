@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "bundle-swagger": "swagger-cli bundle docs/api.yaml --outfile docs/openapi.yaml --type yaml",
-    "start": "npm run bundle-swagger && npm run dev"
+    "start": "npm run bundle-swagger && npm run dev",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -39,6 +40,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "jest": "^29.7.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4"
   }

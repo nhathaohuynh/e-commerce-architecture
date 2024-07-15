@@ -2,8 +2,8 @@
 
 const { model, Schema } = require('mongoose')
 
-const COLLECTION_NAME = 'Smartphones'
-const DOCUMENT_NAME = 'Smartphone'
+const COLLECTION_NAME = 'Laptops'
+const DOCUMENT_NAME = 'Laptop'
 
 const electronicSChema = new Schema(
 	{

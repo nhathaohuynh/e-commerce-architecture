@@ -1,6 +1,6 @@
 const { APIKeyController } = require('../controllers')
 const asyncHandler = require('../middleware/async-handler')
-const validate = require('../middleware/validate')
+const { validate } = require('../middleware/validate')
 const APIKeySchema = require('../validators/APIKey.validator')
 
 const route = require('express').Router()
