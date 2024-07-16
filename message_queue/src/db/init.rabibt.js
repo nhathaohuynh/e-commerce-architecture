@@ -76,4 +76,7 @@ const connectionToRabbitMQForTest = async () => {
 	}
 }
 
-module.exports = { connectionToRabbitMQForTest, RabbitMQ: ConnectRabbitMQ }
+module.exports = {
+	connectionToRabbitMQForTest,
+	RabbitMQ: new ConnectRabbitMQ(),
+}

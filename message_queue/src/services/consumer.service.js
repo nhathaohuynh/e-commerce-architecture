@@ -1,19 +1,15 @@
 const { RabbitMQ } = require('../db/init.rabibt')
 
 class Consumer {
-	async consumer(queueName, callback) {
+	async consumerToQueue(queueName, callback) {
 		try {
-			const { channel } = await new RabbitMQ().getInstanceRabbit()
+			const { channel } = await RabbitMQ.getInstanceRabbit()
 			await channel.assertQueue(queueName, { durable: true })
 
 			channel.consume(
 				queueName,
 				(message) => {
-					console.log(message)
-					if (msg !== null) {
-						console.log(
-							`Received message from queue ${queueName}: ${message.content.toString()}`,
-						)
+					if (message !== null) {
 						callback(message.content.toString())
 					}
 				},

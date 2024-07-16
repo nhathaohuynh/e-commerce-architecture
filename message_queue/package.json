@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "dev": "node server.js",
     "test": "jest"
   },
   "dependencies": {
