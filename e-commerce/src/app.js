@@ -6,12 +6,15 @@ const { errorHandler } = require('./middleware/error-handler')
 const { notFound } = require('./middleware/404-not-found')
 const swaggerDocs = require('../docs/swagger')
 const { writeLogStartRequest } = require('./middleware/write-log')
+const { sendToQueue } = require('./services/producer.service')
 
 // const { checkOverload } = require('./helpers/check-connect')
 
 const app = express()
 
 // init  middleware
+
+sendToQueue('test_topic', 'Hello from e-commerce of Huynh Nhat Hao')
 
 app.use(morgan('dev')) // log the request
 app.use(helmet()) // secure the app by setting various HTTP headers
