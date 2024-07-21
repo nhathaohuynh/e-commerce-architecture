@@ -52,10 +52,6 @@ class ConnectRabbitMQ {
 			await this.connect()
 		}
 
-		if (!this.connection || !this.channel) {
-			throw new Error('Failed to establish RabbitMQ connection')
-		}
-
 		return { channel: this.channel, connection: this.connection }
 	}
 }

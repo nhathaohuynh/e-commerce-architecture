@@ -1,13 +1,11 @@
 'use strict'
 
-const { consumerToQueue } = require('./src/services/consumer.service')
+// const consumer = require('./src/services/consumer.service')
 
-const queueName = 'test_topic'
+// consumer.consumerToQueueFailed()
 
-consumerToQueue(queueName, (message) => {
-	console.log(`Received message: ${message}`)
-})
-	.then(() => {
-		console.log('Consumer started')
-	})
-	.catch((err) => console.log(err))
+// consumer.consumerToQueueNormal()
+
+const consumer = require('./src/services/ordered.consumer.service')
+
+consumer.consumer().then(() => console.log('Consumer started'))
